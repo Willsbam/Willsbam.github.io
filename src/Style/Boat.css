@@ -1,0 +1,21 @@
+.boatSpacing {
+  background-color: red;
+  height: 40%;
+  width: 100%;
+  display: flex; /* Use flexbox to center the image */
+  justify-content: center; /* Horizontally center the image */
+  align-items: end; /* Vertically center the image */
+}
+
+.boat {
+  height:100%;
+  width: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .boat {
+    height: 60%;
+    width: auto;
+  }
+  
+}

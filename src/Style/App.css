@@ -1,0 +1,17 @@
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+    font-family: 'pixelated', sans-serif; /* Apply the font globally */
+}
+@font-face {
+  font-family: 'pixelated';
+  src: local('pixelated'), url('./pixelated.ttf') format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+img{
+   image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

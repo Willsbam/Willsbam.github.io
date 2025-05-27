@@ -1,0 +1,45 @@
+.banSpacing{
+  height: 20%;
+  width: 100%;
+  background-color: gold;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.banner{
+  width:40%;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerLeft,.bannerRight{
+height:100%;
+display: inline-block;
+
+}
+.bannerRight{
+    transform: scaleX(-1);
+}
+.bannerCenter{
+    display: inline-block;
+    height: 100%;
+    width:45%;
+}
+.welcome{
+  position: absolute;
+  top:1%;
+  font-size: 5vh;
+
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 90%;
+    margin-top:2%;
+  }
+  .welcome{
+    top: 5%;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,40 @@
+.SandC{
+  width:10%;
+  position:relative;
+  text-align: center;
+}
+
+.chest{
+  width:100%;
+  position: relative;
+  z-index: 40;
+}
+.sign{
+  width:100%;
+  position: absolute;
+  top: -31%;
+  left:0;
+}
+.signTxt{
+  position:absolute;
+  z-index: 45;
+  width:100%;
+  font-size: 1.0vw;
+}
+
+@media (max-width: 768px) {
+.SandC{
+  width:75px;
+}
+.signTxt{
+font-size:11px;
+top:-35%;
+
+}
+.sign{
+  width:120%;
+  top: -50%;
+  left:-11%;
+  
+}
+}

@@ -1,0 +1,47 @@
+.main{
+  position: absolute;
+  z-index: 110;
+  width:60%;
+  height:60%;
+  top:15%;
+  left:20%;
+}
+.verticalOutline{
+position: absolute;
+height: 100%;
+width:100%;
+top:-4px;
+background-color: #69300f;
+z-index: 105;
+}
+.horizontalOutline{
+position: absolute;
+width:100%;
+height: 100%;
+left:-4px;
+background-color: #69300f;
+z-index: 105;
+}
+.inside{
+  position: absolute;
+  z-index: 110;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eac798
+}
+.innerBorder{
+  border:#d5a067 solid;
+  height:96%;
+}
+
+
+@media (max-width: 768px) {
+.main{
+  width:90%;
+  height:44%;
+  left:5%;
+  top:20%;
+
+}
+}
