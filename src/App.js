@@ -4,14 +4,14 @@ import Background from './Background';
 import Boat from './Boat';
 import Banner from './Banner';
 
-import InfoPage from './Pages/InfoPage';
+import AboutMe from './Pages/About Me';
 function App() {
   return (
     <div className="App">
     <Banner/>
     <Boat/>
     <Background/>
-    <InfoPage/>
+    <AboutMe/>
 
     </div>
   );
