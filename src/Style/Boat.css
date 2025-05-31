@@ -27,11 +27,26 @@
     transform: rotate(-3deg); /* Return to original position */
   }
 }
+.sun{
+  position: absolute;
+  width:auto;
+  height:20%;
+  top:2%;
+  right:5%;
+  animation: rock 5s ease-in-out infinite alternate; /* Animation: name, duration, timing-function, iteration-count */
+  transform-origin: center center; /* Sets the rotation pivot point to bottom center */
+}
 
 @media (max-width: 768px) {
   .boat {
     height: 60%;
     width: auto;
+  }
+  .sun{
+  width:auto;
+  height:15%;
+  right:3%;
+  top:20%;
   }
   
 }

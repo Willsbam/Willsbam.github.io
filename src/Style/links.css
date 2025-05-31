@@ -1,0 +1,12 @@
+.icons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:3%;
+    width:100%;
+    padding: 10px;
+}
+.icon{
+    width:100px;
+    height:100px;
+}

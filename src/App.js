@@ -7,7 +7,7 @@ import Banner from './Banner';
 import AboutMe from './Pages/About Me';
 import Projects from './Pages/Projects';
 import Experience from './Pages/Experience';
-
+import Links from './Pages/Links';
 import { useState } from 'react';
 
 function App() {
@@ -25,6 +25,9 @@ function App() {
       }
       else if(currentVisible === 2){
         return <Experience setVis={setVisible}/>
+      }
+       else if(currentVisible === 3){
+        return <Links setVis={setVisible}/>
       }
 
     }

@@ -6,6 +6,8 @@ import { useState, useEffect } from "react";
 import close from "../Graphics/x.png"
 
 import terminalMon from "../Graphics/terminalmonopoly.gif"
+import ops from "../Graphics/ops.png"
+
 const InfoPage = ({setVis}) => {
   
 
@@ -82,22 +84,23 @@ const InfoPage = ({setVis}) => {
                   </p>
                  
                   
-              <img style={{width:"30%"}} 
+              <img style={{width:"30%",height:"30%"}} 
               src={terminalMon} alt="Terminal Monopoly, Writing in ASCII art"></img>
               </div>
 
 
               <h4  style={{margin:"0",marginTop:"2%"}}><u>Open Project Space &#40;Fall 2024 - Spring 2025&#41;</u></h4>
               <div style={{display:"flex",flexWrap:"wrap",}}>
-                 <p className='clubText'>Worked on Terminal Monopoly, 
-                  an online version of monopoly created with ASCII art. Created a mini-game called Space Trucker, a 
-                  parody of asteroid where you have to survive increasingly difficult random events 
-                  <br></br>Written in Python
+                 <p className='clubText'> A weekly club offered by IEEE to learn electrical engineering
+                  concepts without taking the elcetrical engineering classes proper. Learned how to utilize
+                  and program micro-controllers alongside various circuits
+                  <br></br>&nbsp;&nbsp;&nbsp;&nbsp;Created weekly hardware  projects for the class, with a final
+                  project of me and my partner recreating doodle jump!
                   </p>
                  
                   
-              <img style={{width:"30%"}} 
-              src={terminalMon} alt="Terminal Monopoly, Writing in ASCII art"></img>
+              <img style={{width:"30%", height:"30%"}} 
+              src={ops} alt="Image saying the words OPS"></img>
               </div>
              
             </div>

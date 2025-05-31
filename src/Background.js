@@ -41,11 +41,38 @@ const Background = ({setVis}) => {
 
 
     <div className="ocean">
-      
-      <Wave fill='#2095dd'
+      {window.innerWidth<768 ?<Wave fill='#2095dd'
         paused={false}
         style={{ display: 'flex', position: 'absolute',
-           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:0.5 }}
+           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,
+          }}
+          //  Couldn't get the style to work by wra pper
+          //So I'm forced to add it this way
+        options={{
+          height: 20,
+          amplitude: 10,
+          speed: 0.15,
+          points: 3
+        }}
+  /> :<Wave fill='#2095dd'
+        paused={false}
+        style={{ display: 'flex', position: 'absolute',
+           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,
+          }}
+          //  Couldn't get the style to work by wra pper
+          //So I'm forced to add it this way
+        options={{
+          height: 20,
+          amplitude: 20,
+          speed: 0.15,
+          points: 3
+        }}
+  /> }
+      
+  <Wave fill='#2095dd'
+        paused={false}
+        style={{ display: 'flex', position: 'absolute',
+           bottom:0, width: '100%', height: '95%',zIndex:70, opacity:0.1 }}
           //  Couldn't get the style to work by wra pper
           //So I'm forced to add it this way
         options={{
