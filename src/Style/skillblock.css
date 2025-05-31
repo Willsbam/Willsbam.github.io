@@ -1,0 +1,35 @@
+
+.skillGrouping{
+    width:300px;
+    height:48px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skillBlock{
+    width: 150px;
+    padding: 2px;
+    padding-left: 4px;
+
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    background-color: beige;
+}
+.percentageOutline{
+    width:150px;
+    height:50%;
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    background-color: beige;
+    
+}
+.percentageFill{
+
+    background-color: goldenrod;
+    height: 100%;
+
+}

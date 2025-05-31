@@ -1,5 +1,5 @@
 .boatSpacing {
-  background-color: red;
+  /* background-color: red; */
   height: 40%;
   width: 100%;
   display: flex; /* Use flexbox to center the image */
@@ -11,7 +11,23 @@
   height:100%;
   width: auto;
   display: block;
+
+  animation: rock 5s ease-in-out infinite alternate; /* Animation: name, duration, timing-function, iteration-count */
+  transform-origin: center bottom; /* Sets the rotation pivot point to bottom center */
+
 }
+
+/* Define the keyframes for back-and-forth rotation */
+@keyframes rock {
+  0% {
+    transform: rotate(3deg);
+  }
+ 
+  100% {
+    transform: rotate(-3deg); /* Return to original position */
+  }
+}
+
 @media (max-width: 768px) {
   .boat {
     height: 60%;

@@ -1,0 +1,31 @@
+.skillsFlex{
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width:90%;
+    margin-left:5%;
+}
+.skillItem{
+    width:150px;
+}
+.skillBlock{
+    width: 150px;
+    padding: 2px;
+    padding-left: 4px;
+
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    background-color: beige;
+}
+.clubSpacing{
+    margin-left: 2%;
+    width:96%;
+}
+.clubText{
+    margin:0;
+    margin-left:1%;
+    width:68%;
+}

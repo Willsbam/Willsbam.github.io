@@ -9,10 +9,10 @@ import SaC from './SignandChest.js'
 
 
 
-const Background = () => {
+const Background = ({setVis}) => {
   
   const [beachHeight,setBeachHeight] = useState(0);
-    const [beachWidth,setBeachWidth] = useState(100);
+  const [beachWidth,setBeachWidth] = useState(100);
 
 
   function alterBeachHeight(){
@@ -57,10 +57,10 @@ const Background = () => {
   />
     <div className='beach'>
       <div className="chestsAlign">
-          <SaC title={"About Me"} fSize={1.1}/>
-          <SaC title={"Projects"} fSize={1.2}/>
-          <SaC title={"Experience"}fSize={0.9} topPercent={-15}/>
-          <SaC title={"Links"}/>
+          <SaC title={"About Me"} fSize={1.1} rotation={6} setVis={setVis} visIndex={0} />
+          <SaC title={"Projects"} fSize={1.2} setVis={setVis} visIndex={1} />
+          <SaC title={"Experience"}fSize={0.9} topPercent={-15} setVis={setVis} visIndex={2}  />
+          <SaC title={"Links"} rotation={-6} setVis={setVis} visIndex={3} />
 
 
 

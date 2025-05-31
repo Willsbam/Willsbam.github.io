@@ -5,14 +5,35 @@ import Boat from './Boat';
 import Banner from './Banner';
 
 import AboutMe from './Pages/About Me';
+import Projects from './Pages/Projects';
+import Experience from './Pages/Experience';
+
+import { useState } from 'react';
+
 function App() {
+    const [currentVisible,setVisible] = useState(-1);
+
+    function renderPages(){
+      if(currentVisible ===-1){
+        return;
+      }
+      else if(currentVisible === 0){
+        return <AboutMe setVis={setVisible}/>
+      }
+      else if(currentVisible === 1){
+        return <Projects setVis={setVisible}/>
+      }
+      else if(currentVisible === 2){
+        return <Experience setVis={setVisible}/>
+      }
+
+    }
   return (
     <div className="App">
     <Banner/>
     <Boat/>
-    <Background/>
-    <AboutMe/>
-
+    <Background setVis={setVisible}/>
+    {renderPages()}
     </div>
   );
 }
