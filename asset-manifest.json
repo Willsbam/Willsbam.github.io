@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c59fe12c.css",
-    "main.js": "/static/js/main.b1000848.js",
+    "main.js": "/static/js/main.58072e44.js",
     "static/media/terminalmonopoly.gif": "/static/media/terminalmonopoly.4d49efc3a44405761c63.gif",
     "static/media/pixelated.ttf": "/static/media/pixelated.89ef5cdaa200e5628ba8.ttf",
     "static/media/linkedin.png": "/static/media/linkedin.084ff6c281b80f4700b7.png",
@@ -11,10 +11,10 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.c59fe12c.css.map": "/static/css/main.c59fe12c.css.map",
-    "main.b1000848.js.map": "/static/js/main.b1000848.js.map"
+    "main.58072e44.js.map": "/static/js/main.58072e44.js.map"
   },
   "entrypoints": [
     "static/css/main.c59fe12c.css",
-    "static/js/main.b1000848.js"
+    "static/js/main.58072e44.js"
   ]
 }
