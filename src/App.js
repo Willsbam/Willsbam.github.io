@@ -32,10 +32,11 @@ function App() {
 
     }
   return (
+    
     <div className="App">
     <Banner/>
     <Boat/>
-    <Background setVis={setVisible}/>
+    <Background setVis={setVisible} curVis={currentVisible}/>
     {renderPages()}
     </div>
   );

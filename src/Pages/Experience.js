@@ -75,6 +75,7 @@ const InfoPage = ({setVis}) => {
         </div>
             <h3 style={{textAlign:'center'}}>Extra Curriculars</h3>
             <div className='clubSpacing'>
+
               <h4  style={{margin:"0"}}><u>Open Source Club &#40;Fall 2024 - Spring 2025&#41;</u></h4>
               <div style={{display:"flex",flexWrap:"wrap",}}>
                  <p className='clubText'>Worked on Terminal Monopoly, 
@@ -84,7 +85,7 @@ const InfoPage = ({setVis}) => {
                   </p>
                  
                   
-              <img style={{width:"30%",height:"30%"}} 
+              <img className='clubImages'
               src={terminalMon} alt="Terminal Monopoly, Writing in ASCII art"></img>
               </div>
 
@@ -99,7 +100,7 @@ const InfoPage = ({setVis}) => {
                   </p>
                  
                   
-              <img style={{width:"30%", height:"30%"}} 
+              <img className='clubImages'
               src={ops} alt="Image saying the words OPS"></img>
               </div>
              

@@ -6,6 +6,16 @@
   top:14%;
   left:20%;
 }
+
+.mainLinks{
+  position: absolute;
+  z-index: 110;
+  width:30%;
+  height:30%;
+  top:25%;
+  left:35%;
+}
+
 .verticalOutline{
 position: absolute;
 height: 100%;
@@ -55,6 +65,13 @@ z-index: 105;
 
 @media (max-width: 768px) {
 .main{
+  width:90%;
+  height:44%;
+  left:5%;
+  top:20%;
+
+}
+.mainLinks{
   width:90%;
   height:44%;
   left:5%;

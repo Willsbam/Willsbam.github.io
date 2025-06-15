@@ -11,7 +11,7 @@
   height:100%;
   width: auto;
   display: block;
-
+  z-index: 30;
   animation: rock 5s ease-in-out infinite alternate; /* Animation: name, duration, timing-function, iteration-count */
   transform-origin: center bottom; /* Sets the rotation pivot point to bottom center */
 
@@ -37,6 +37,41 @@
   transform-origin: center center; /* Sets the rotation pivot point to bottom center */
 }
 
+.island1{
+  position: absolute;
+  width:auto;
+  height:5%;
+  top:55%;
+  left:5%;
+}
+
+.island2{
+  position: absolute;
+  width:auto;
+  height:10%;
+  top:52%;
+  right:10%;
+}
+
+
+.cloud1{
+  position: absolute;
+  width:auto;
+  z-index: 20;
+  height:10%;
+  top:20%;
+}
+
+.cloud2{
+  position: absolute;
+  width:auto;
+  z-index: 20;
+  height:10%;
+  top:25%;
+}
+
+
+
 @media (max-width: 768px) {
   .boat {
     height: 60%;
@@ -47,6 +82,15 @@
   height:15%;
   right:3%;
   top:20%;
+  }
+  .cloud1{
+      height:7%;
+  }
+   .cloud2{
+      height:7%;
+  }
+  .island2{
+    visibility:hidden;
   }
   
 }

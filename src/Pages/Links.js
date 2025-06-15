@@ -13,7 +13,8 @@ const InfoPage = ({setVis}) => {
      const [borderHeight,setBorderHeight] = useState(0);
  
     const offset=16;
-   function pixelSpacing(){
+   function pixelSpacing()
+   {
    const insideDiv=document.querySelector('.inside').getBoundingClientRect();
    const verticalOutline=document.querySelector('.verticalOutline');
    const horizontalOutline=document.querySelector('.horizontalOutline');
@@ -37,7 +38,7 @@ const InfoPage = ({setVis}) => {
    }, []);
 
   return (
-    <div className="main">
+    <div className="mainLinks">
       <div className="verticalOutline" style={{height:`${borderHeight}px`,top:`${-(offset/2)}px`}}></div>
       <div className="horizontalOutline" style={{width:`${borderWidth}px`,left:`${-(offset/2)}px`}}></div>
       <img src={close} alt="Close" className="closeButton" onClick={() => setVis(-1)}/>

@@ -9,8 +9,8 @@ import SaC from './SignandChest.js'
 
 
 
-const Background = ({setVis}) => {
-  
+const Background = ({setVis, curVis}) => {
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
   const [beachHeight,setBeachHeight] = useState(0);
   const [beachWidth,setBeachWidth] = useState(100);
 
@@ -37,6 +37,20 @@ const Background = ({setVis}) => {
     };
   }, []);
 
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+   useEffect(() => {
+    alterBeachHeight();
+  }, [windowWidth]);
+
   return (
 
 
@@ -44,7 +58,7 @@ const Background = ({setVis}) => {
       {window.innerWidth<768 ?<Wave fill='#2095dd'
         paused={false}
         style={{ display: 'flex', position: 'absolute',
-           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,
+           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,pointerEvents:"none",
           }}
           //  Couldn't get the style to work by wra pper
           //So I'm forced to add it this way
@@ -57,7 +71,7 @@ const Background = ({setVis}) => {
   /> :<Wave fill='#2095dd'
         paused={false}
         style={{ display: 'flex', position: 'absolute',
-           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,
+           bottom:0, width: '100%', height: '95%',zIndex:50, opacity:1,pointerEvents:"none",
           }}
           //  Couldn't get the style to work by wra pper
           //So I'm forced to add it this way
@@ -72,7 +86,7 @@ const Background = ({setVis}) => {
   <Wave fill='#2095dd'
         paused={false}
         style={{ display: 'flex', position: 'absolute',
-           bottom:0, width: '100%', height: '95%',zIndex:70, opacity:0.1 }}
+           bottom:0, width: '100%', height: '95%',zIndex:70, opacity:0.1,pointerEvents:"none", }}
           //  Couldn't get the style to work by wra pper
           //So I'm forced to add it this way
         options={{
@@ -84,13 +98,10 @@ const Background = ({setVis}) => {
   />
     <div className='beach'>
       <div className="chestsAlign">
-          <SaC title={"About Me"} fSize={1.1} rotation={6} setVis={setVis} visIndex={0} />
-          <SaC title={"Projects"} fSize={1.2} setVis={setVis} visIndex={1} />
-          <SaC title={"Experience"}fSize={0.9} topPercent={-15} setVis={setVis} visIndex={2}  />
-          <SaC title={"Links"} rotation={-6} setVis={setVis} visIndex={3} />
-
-
-
+          <SaC title={"About Me"} fSize={1.1} rotation={6} setVis={setVis} visIndex={0} curVis={curVis} />
+          <SaC title={"Projects"} fSize={1.2} setVis={setVis} visIndex={1} curVis={curVis} />
+          <SaC title={"Experience"}fSize={0.9} topPercent={-15} setVis={setVis} visIndex={2} curVis={curVis} />
+          <SaC title={"Links"} rotation={-6} setVis={setVis} visIndex={3} curVis={curVis} />
         </div>
       <img src={beach} alt="beach" className="beachImage" style={{ width: `${beachWidth}%`}} />
       <div className="beachRaise" style={{height:beachHeight}}>
