@@ -28,11 +28,7 @@ const Boat = () => {
         const nextX=prevX + 1;
         if(nextX>window.innerWidth)
         {
-          if(window.innerWidth<768)
-          {
-            return -150;
-          }
-          return -40;
+            return -200;
         }
         return nextX;
     });
