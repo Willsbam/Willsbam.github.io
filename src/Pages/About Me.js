@@ -3,6 +3,8 @@ import '../Style/InfoPage.css'
 import '../Style/aboutme.css'
 import { useState, useEffect } from "react";
 import close from "../Graphics/x.png"
+import profilePic from '../Graphics/linkedinProfilePic.jpg'
+
 const InfoPage = ({setVis}) => {
   
 
@@ -43,7 +45,7 @@ const InfoPage = ({setVis}) => {
           <div className="flexbox"> 
             <img 
               className="profilePic"
-              src="https://media.istockphoto.com/id/1309352410/photo/cheeseburger-with-tomato-and-lettuce-on-wooden-board.jpg?s=2048x2048&w=is&k=20&c=wydysVEp52o1ULrj9XWI_f8M2lZ06qm8xlBl6GmjTSQ="
+              src={profilePic}
               alt="William Bramley"
             />
             <div className="bio">
